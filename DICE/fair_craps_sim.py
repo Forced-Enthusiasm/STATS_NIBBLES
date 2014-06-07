@@ -37,17 +37,9 @@ for i in range(1,7):
 
 print "In " +str(number_of_games)+" rolls of a fair dice, we get:"
 
-print "1: " + str(occurences[0]) + " occurences"
+for i in range(1,7):
 
-print "2: " + str(occurences[1]) + " occurences"
-
-print "3: " + str(occurences[2]) + " occurences"
-
-print "4: " + str(occurences[3]) + " occurences"
-
-print "5: " + str(occurences[4]) + " occurences"
-
-print "6: " + str(occurences[5]) + " occurences"
+	print str(i)+": " + str(occurences[i-1]) + " occurences"
 
 
 # Simulating a Come-out roll for a craps game over 1000 games

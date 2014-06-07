@@ -14,9 +14,9 @@ def fair_dice_sampler(N):
 
 	return sampler
 
-number_of_games = 6000
+number_of_games_dce = 6000
 
-sample = fair_dice_sampler(number_of_games)
+sample = fair_dice_sampler(number_of_games_dce)
 
 occurences = []
 
@@ -35,7 +35,7 @@ for i in range(1,7):
 	number_of_occurences = 0	
 
 
-print "In " +str(number_of_games)+" rolls of a fair dice, we get:"
+print "In " +str(number_of_games_dce)+" rolls of a fair dice, we get:"
 
 for i in range(1,7):
 
@@ -63,4 +63,6 @@ def fair_craps_simulator(N):
 
 	return number_of_wins
 
-print "In 1000 games of craps with 2 fair dice, you should win on the first roll " + str(fair_craps_simulator(1000)) + " times."
+number_of_games = 1000
+
+print "In " +str(number_of_games)+" games of craps with 2 fair dice, you should win on the first roll " + str(fair_craps_simulator(number_of_games)) + " times."
